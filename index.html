@@ -14,9 +14,8 @@
     .navbar {
       background-color: #031a27;
     }
-    .navbar-brand {
-      font-weight: bold;
-      color: #00d1ff;
+    .navbar-brand img {
+      height: 40px;
     }
     .navbar-nav .nav-link {
       color: #ffffff;
@@ -46,6 +45,14 @@
       background-color: #007bff;
       border: none;
     }
+    .card {
+      background-color: #1c1f26;
+      border: none;
+      margin-bottom: 1rem;
+    }
+    .card h5 {
+      color: #00d1ff;
+    }
     footer {
       background-color: #031a27;
       padding: 1rem 0;
@@ -56,11 +63,9 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="cdrsolutions.svg" alt="CDR Solutions" height="80">
-      </a>
+      <a class="navbar-brand" href="#"><img src="cdrsolutions.svg" alt="CDR Solutions" height="80"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -85,24 +90,36 @@
   <section class="container my-5" id="servicos">
     <h2 class="section-title">Serviços</h2>
     <div class="row">
-      <div class="col-md-6">
-        <h4>Monitorização Inteligente</h4>
-        <p>Zabbix, Grafana e ELK configurados para alta visibilidade e performance.</p>
-        <h4>Infraestrutura sob Medida</h4>
-        <p>Criação de imagens para VMs ou containers com automação e segurança.</p>
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3">
+          <h5>Monitorização Inteligente</h5>
+          <p>Zabbix, Grafana e ELK configurados para alta visibilidade e performance.</p>
+        </div>
       </div>
-      <div class="col-md-6">
-        <h4>Administração Remota</h4>
-        <p>Servidores, redes e storages geridos com eficiência e confiabilidade.</p>
-        <h4>Segurança e Obsolescência</h4>
-        <p>Varreduras, patches e roadmap tecnológico para proteger seu ambiente.</p>
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3">
+          <h5>Infraestrutura sob Medida</h5>
+          <p>Criação de imagens para VMs ou containers com automação e segurança.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3">
+          <h5>Administração Remota</h5>
+          <p>Servidores, redes e storages geridos com eficiência e confiabilidade.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card p-3">
+          <h5>Segurança e Obsolescência</h5>
+          <p>Varreduras, patches e roadmap tecnológico para proteger seu ambiente.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="container my-5" id="sobre">
     <h2 class="section-title">Sobre</h2>
-    <p>Com mais de 70 anos de experiência combinada em infraestrutura, segurança e suporte a aplicação, atuamos em qualquer lugar do mundo com soluções ágeis, seguras e personalizadas para cada cliente.</p>
+    <p>Com mais de 30 anos de experiência em infraestrutura, segurança e suporte a aplicação, atuamos em qualquer lugar do mundo com soluções ágeis, seguras e personalizadas para cada cliente.</p>
   </section>
 
   <section class="container my-5" id="contacto">
