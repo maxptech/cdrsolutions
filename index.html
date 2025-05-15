@@ -11,26 +11,38 @@
       background-color: #0f1115;
       color: #ffffff;
     }
-    .navbar {
-      background-color: #031a27;
+    header {
+      background: linear-gradient(to right, #0f1115, #031a27);
+      padding: 0.5rem 0;
     }
-    .navbar-brand img {
-      height: 40px;
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .header-logo img {
+      height: 80px;
+    }
+    .header-title {
+      text-align: center;
+      flex-grow: 1;
+    }
+    .header-title h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #00d1ff;
+    }
+    .header-title p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    .navbar {
+      padding: 0;
     }
     .navbar-nav .nav-link {
       color: #ffffff;
-    }
-    .hero {
-      background: linear-gradient(to right, #0f1115, #031a27);
-      padding: 80px 0;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      color: #00d1ff;
-    }
-    .hero p {
-      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
     }
     .section-title {
       color: #00d1ff;
@@ -63,33 +75,28 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="cdrsolutions.svg" alt="CDR Solutions" height="120"></a>
-      <section class="hero">
+  <header class="sticky-top">
+    <div class="container header-container">
+      <div class="header-logo"><img src="cdrsolutions.svg" alt="CDR Solutions" height="120"></div>
+      <div class="header-title">
         <h1>CDR Solutions</h1>
         <p>Technology and Automation</p>
-      </section>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="#artigos">Artigos</a></li>
-        </ul>
       </div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#artigos">Artigos</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </nav>
-
-  <section class="hero">
-    <div class="container">
-      <h1>CDR Solutions</h1>
-      <p>Technology and Automation</p>
-    </div>
-  </section>
+  </header>
 
   <section class="container my-5" id="servicos">
     <h2 class="section-title">Serviços</h2>
@@ -128,7 +135,7 @@
 
   <section class="container my-5" id="contacto">
     <h2 class="section-title">Formulário de Contacto</h2>
-    <form action="https://formsubmit.co/maximopadron@outlook.com" method="POST">
+    <form action="https://formsubmit.co/SEU_EMAIL@EXEMPLO.COM" method="POST">
       <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
         <input type="text" class="form-control" id="nome" name="nome" required>
