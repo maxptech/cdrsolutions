@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDR Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f1115;
+      color: #ffffff;
+    }
+    .navbar {
+      background-color: #031a27;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #00d1ff;
+    }
+    .navbar-nav .nav-link {
+      color: #ffffff;
+    }
+    .hero {
+      background: linear-gradient(to right, #0f1115, #031a27);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #00d1ff;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section-title {
+      color: #00d1ff;
+      border-bottom: 2px solid #00d1ff;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .form-control, .btn {
+      border-radius: 0;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+    footer {
+      background-color: #031a27;
+      padding: 1rem 0;
+      text-align: center;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">CDR Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#artigos">Artigos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>CDR Solutions</h1>
+      <p>Technology and Automation</p>
+    </div>
+  </section>
+
+  <section class="container my-5" id="servicos">
+    <h2 class="section-title">Serviços</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>a. Monitorização Inteligente</h4>
+        <p>Zabbix, Grafana e ELK configurados para alta visibilidade e performance.</p>
+        <h4>b. Infraestrutura sob Medida</h4>
+        <p>Criação de imagens para VMs ou containers com automação e segurança.</p>
+      </div>
+      <div class="col-md-6">
+        <h4>c. Administração Remota</h4>
+        <p>Servidores, redes e storages geridos com eficiência e confiabilidade.</p>
+        <h4>d. Segurança e Obsolescência</h4>
+        <p>Varreduras, patches e roadmap tecnológico para proteger seu ambiente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5" id="sobre">
+    <h2 class="section-title">Sobre</h2>
+    <p>Com mais de 30 anos de experiência em infraestrutura, segurança e suporte a aplicação, atuamos em qualquer lugar do mundo com soluções ágeis, seguras e personalizadas para cada cliente.</p>
+  </section>
+
+  <section class="container my-5" id="contacto">
+    <h2 class="section-title">Formulário de Contacto</h2>
+    <form action="https://formsubmit.co/SEU_EMAIL@EXEMPLO.COM" method="POST">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <section class="container my-5" id="artigos">
+    <h2 class="section-title">Artigos</h2>
+    <div id="carouselArtigos" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-block w-100 text-center p-5 bg-secondary text-white rounded">
+            <h5>Artigo em breve</h5>
+            <p>Em breve, publicaremos conteúdos sobre nossas soluções e tecnologia aplicada.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100 text-center p-5 bg-dark text-white rounded">
+            <h5>Artigos Técnicos</h5>
+            <p>Fique atento às novidades sobre automação, segurança e performance.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselArtigos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselArtigos" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CDR Solutions. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
